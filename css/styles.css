@@ -1,0 +1,35 @@
+:root {
+    --primary: #D87D4A;
+    --secondary: #101010;
+    --tertiary: #F1F1F1;
+    --quaternary: #FAFAFA;
+    --primary-light: #FBAF85;
+    --White: #FFFFFF;
+    --Black: #000000;
+}
+
+* {
+    box-sizing: border-box;
+    display: flex;
+}
+
+body {
+    margin: 0;
+}
+
+/* Small (sm) */
+@media (min-width: 640px) {
+}
+/* Medium (md) */
+@media (min-width: 768px) {
+    /* Your styles for the medium breakpoint here */
+}
+/* Large (lg) */
+@media (min-width: 1024px) {
+    /* Your styles for the large breakpoint here */
+}
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */  }
+
+
