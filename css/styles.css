@@ -10,14 +10,33 @@
 
 * {
     box-sizing: border-box;
-    display: flex;
 }
 
 body {
     margin: 0;
     font-family: 'Manrope', sans-serif;
-
+    min-height: 100vh;
 }
+
+.inner-container{
+    max-width: 1110px;
+    margin: 0 auto;
+    height: 100%;
+    background-image: url("../assets/assets/home/mobile/image-header.jpg");
+}
+ .outer-container {
+     background-color: #191919;
+     height: 728px;
+ }
+
+ .hero-banner-section {
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: center;
+ }
+
+
+
 
 /* Small (sm) */
 @media (min-width: 640px) {
@@ -25,6 +44,10 @@ body {
 /* Medium (md) */
 @media (min-width: 768px) {
     /* Your styles for the medium breakpoint here */
+    .hero-banner-section{
+        background-image: url("../assets/assets/home/tablet/image-header.jpg");
+    }
+
 }
 /* Large (lg) */
 @media (min-width: 1024px) {
@@ -32,6 +55,10 @@ body {
 }
 /* Extra Large (xl) */
 @media (min-width: 1280px) {
-    /* Your styles for the extra large breakpoint here */  }
+    /* Your styles for the extra large breakpoint here */
+    .hero-banner-section{
+        background-image: url("../assets/assets/home/desktop/image-hero.jpg");
+    }
+}
 
 
