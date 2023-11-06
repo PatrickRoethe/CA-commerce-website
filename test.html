@@ -1,0 +1,27 @@
+<!-- Meny for Audiophile project- mobile- using JAVASCRIPT-->
+<style>
+    #menu {
+        display: none;
+    }
+</style>
+
+<div>
+    <button id="toggleBtn"> toogle btn</button>
+
+    <div id="menu">
+        The menu we want to hide and show
+    </div>
+</div>
+
+<script>
+ document.getElementById("toggleBtn").addEventListener("click", function () {
+     let menu = document.getElementById("menu");
+
+     if (menu.style.display=== "none" || menu.style.display==="") {
+         menu.style.display = "block";
+     } else {
+         menu.style.display = "none";
+     }
+ });
+</script>
+
