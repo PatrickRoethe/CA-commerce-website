@@ -18,15 +18,22 @@ body {
     min-height: 100vh;
 }
 
-.inner-container{
+.inner-container {
     max-width: 1110px;
     margin: 0 auto;
     height: 100%;
 }
+#menu {
+    display: none;
+}
+
+.hero-banner-inner-container {
+   position: relative;
+}
 
  .outer-container {
      background-color: #191919;
-     height: 728px;
+     height: 600px;
  }
 
  .hero-banner-section {
@@ -36,6 +43,8 @@ body {
      background-position: center;
      width: 100%;
      height: 100%;
+     position: absolute;
+     top: 0;
  }
 
 header {
@@ -43,10 +52,17 @@ header {
     justify-content: space-between;
     padding: 2rem 1.5rem;
     border-bottom: 1px solid #2D2D2D;
-    align-items: center
-;
+    align-items: center;
+    position: relative;
+    z-index: 2;
  }
+.nav-desktop {
+   display: none;
+}
 
+#toggleBtn {
+    cursor: pointer;
+}
 
 /* Small (sm) */
 @media (min-width: 640px) {
@@ -54,6 +70,12 @@ header {
 /* Medium (md) */
 @media (min-width: 768px) {
     /* Your styles for the medium breakpoint here */
+    #menu {
+
+    }
+    .outer-container {
+        height: 728px;
+    }
     .hero-banner-section {
         background-image: url("../assets/assets/home/tablet/image-header.jpg");
     }
@@ -73,9 +95,45 @@ header .checkout-button {
 /* Extra Large (xl) */
 @media (min-width: 1280px) {
     /* Your styles for the extra large breakpoint here */
+    header {
+        padding-left: 0;
+        padding-right: 0;
+    }
     .hero-banner-section {
         background-image: url("../assets/assets/home/desktop/image-hero.jpg");
+        background-size: cover;
+    }
+    .desktop-menu-toggle-btn {
+      display: none;
+    }
+    .nav-desktop {
+        margin: 0 auto;
+
+    }
+    .nav-desktop ul {
+        display: flex;
+        list-style-type: none;
+        gap: 43px;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-desktop a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 13px;
+        letter-spacing:2px;
+        line-height:25px;
+    }
+    .nav-desktop a:hover, .nav-desktop a:focus {
+        color:var(--primary) ;
+    }
+    .nav-desktop {
+        display: block;
     }
 }
+
+
+
 
 
