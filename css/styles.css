@@ -1,3 +1,5 @@
+ @import 'black-box-product.css';
+
 :root {
     --primary: #D87D4A;
     --secondary: #101010;
@@ -73,7 +75,7 @@ body {
     background-color: #191919;
     height: 600px;
 }
-header {
+.navbar {
     display: flex;
     justify-content: space-between;
     padding: 2rem 1.5rem;
@@ -81,6 +83,7 @@ header {
     align-items: center;
     position: relative;
     z-index: 2;
+    background-color: #191919;
 }
 .nav-desktop {
     display: none;
