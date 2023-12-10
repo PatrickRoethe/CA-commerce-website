@@ -1,0 +1,253 @@
+
+#menu {
+    position: absolute;
+    width: 100%;
+    background-color: #FFFFFF;
+    z-index: 1;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+.menu-container {
+    display: flex;
+    padding: 80px 24px;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    width:100%;
+    margin: 0 auto;
+}
+.menu-item {
+    display: block;
+    width: 100%;
+    margin: 16px 0;
+    height:100%;
+
+}
+.menu-item-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 8px;
+    background: #F1F1F1;
+    padding: 22px 0;
+}
+.menu-item-content img {
+    margin: -50px auto 0 auto;
+}
+.menu-item-content p {
+
+}
+.menu-item-content a  {
+
+}
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1.5rem;
+    border-bottom: 1px solid #2D2D2D;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    background-color: #191919;
+}
+.nav-desktop {
+    display: none;
+}
+
+#toggleBtn {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* Small (sm) */
+@media (min-width: 440px) {
+  
+    #menu {
+        position: absolute;
+        width: 100%;
+        background-color: #FFFFFF;
+        z-index: 1;
+        display: none;
+    }
+    .menu-container {
+        display: flex;
+        padding: 80px 20px;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        width: 250px;
+        margin: 0 auto;
+
+    }
+    .menu-item {
+        display: block;
+        width: 223px;
+        margin: 16px 0;
+        height: 100%;
+    }
+    .menu-item-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 8px;
+        background: #F1F1F1;
+        padding: 22px 0;
+    }
+    .menu-item-content img {
+        margin: -50px auto 0 auto;
+    }
+    .menu-item-content p {
+
+    }
+    .menu-item-content a  {
+
+    }
+}
+/* Medium (md) */
+@media (min-width: 768px) {
+    /* Menu and header */
+    #menu {
+        position: absolute;
+        width: 100%;
+        background-color: #FFFFFF;
+        z-index: 1;
+        display: none;
+    }
+    .menu-container {
+        display: flex;
+        padding: 80px 20px;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .menu-item {
+        display: block;
+        width: 223px;
+        height: 100%;
+    }
+    .menu-item-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 8px;
+        background: #F1F1F1;
+        padding: 22px 0;
+    }
+    .menu-item-content img {
+        margin: -50px auto 0 auto;
+    }
+    .menu-item-content p {
+
+    }
+    .menu-item-content a  {
+
+    }
+
+    header {
+        justify-content:flex-start;
+        gap: 42px;
+    }
+    header .checkout-button {
+        margin-left: auto;
+    }
+   
+}
+
+/* Large (lg) */
+@media (min-width: 1024px) {
+    #menu {
+        position: absolute;
+        width: 100%;
+        background-color: #FFFFFF;
+        z-index: 1;
+        display: none;
+    }
+    .menu-container {
+        display: flex;
+        padding: 80px 20px;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .menu-item {
+        display: block;
+        width: 223px;
+        height: 100%;
+    }
+    .menu-item-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 8px;
+        background: #F1F1F1;
+        padding: 22px 0;
+    }
+    .menu-item-content img {
+        margin: -50px auto 0 auto;
+    }
+    .menu-item-content p {
+
+    }
+    .menu-item-content a  {
+
+    }
+
+}
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+    #menu {
+        display: none;
+    }
+    .menu-toggle {
+        display: none;
+    }
+    .menu-section {
+        display: flex;
+    }
+    /* Header and Navbar */
+    header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .desktop-menu-toggle-btn {
+        display: none;
+    }
+    .nav-desktop {
+        margin: 0 auto;
+
+    }
+    .nav-desktop ul {
+        display: flex;
+        list-style-type: none;
+        gap: 43px;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-desktop a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 13px;
+        letter-spacing:2px;
+        line-height:25px;
+    }
+    .nav-desktop a:hover, .nav-desktop a:focus {
+        color:var(--primary) ;
+    }
+    .nav-desktop {
+        display: block;
+    }
+
+  
+}
