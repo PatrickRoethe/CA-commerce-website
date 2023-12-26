@@ -1,0 +1,32 @@
+#checkout {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    display: none;
+    z-index: 100;
+}
+
+.checkout-content-container {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    z-index: 101;
+    overflow-y: hidden;
+    max-width: 500px;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0px 20px;
+}
+
+.checkout-content-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+    overflow-y: hidden;
+    z-index: 100;
+}
